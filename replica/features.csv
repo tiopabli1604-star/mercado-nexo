@@ -1,0 +1,55 @@
+feature,area,priority,original,clone,notes
+Buscar instrumentos por nombre y ticker,gráficos,must,yes,yes,
+Seleccionar mercado e intervalo,gráficos,must,yes,yes,
+Velas y línea,gráficos,must,yes,yes,
+Volumen,gráficos,must,yes,yes,
+Zoom y desplazamiento,gráficos,must,yes,yes,
+Cursor con OHLC,gráficos,must,yes,yes,
+Escala logarítmica,gráficos,must,yes,yes,
+Datos de todos los mercados,datos,should,yes,partial,8 pares de criptomonedas USD de Coinbase; sin acciones ni otras bolsas
+Cotización continua por tick,datos,should,yes,partial,Precio por sondeo cada 15 s y velas cada 60 s; no streaming de cada operación
+SMA,indicadores,must,yes,yes,
+EMA,indicadores,must,yes,yes,
+RSI con suavizado Wilder,indicadores,must,yes,yes,
+MACD,indicadores,must,yes,yes,
+Bandas de Bollinger,indicadores,must,yes,yes,
+Configurar periodo y color,indicadores,must,yes,yes,
+Eliminar indicador,indicadores,must,yes,yes,
+Línea de tendencia,dibujos,must,yes,yes,
+Línea horizontal,dibujos,must,yes,yes,
+Rectángulo,dibujos,must,yes,yes,
+Notas de texto,dibujos,must,yes,yes,
+Editar puntos y color,dibujos,must,yes,yes,
+Ocultar y bloquear,dibujos,must,yes,yes,
+Eliminar dibujos,dibujos,must,yes,yes,
+Deshacer y rehacer,dibujos,must,yes,yes,
+Persistir por instrumento,dibujos,must,yes,yes,
+Crear listas,listas,must,yes,yes,
+Renombrar listas,listas,must,yes,yes,
+Borrar listas,listas,must,yes,yes,
+Añadir y quitar instrumentos,listas,must,yes,yes,
+Reordenar instrumentos,listas,must,yes,yes,
+Seleccionar instrumento desde lista,listas,must,yes,yes,
+Crear alerta de precio,alertas,must,yes,yes,
+Cruce ascendente y descendente,alertas,must,yes,yes,
+Mayor y menor que umbral,alertas,must,yes,yes,
+Alertas SMA EMA RSI al cierre,alertas,must,yes,yes,
+Guardar parámetros de alerta,alertas,must,yes,yes,
+Pausar y reactivar,alertas,must,yes,yes,
+Eliminar alerta,alertas,must,yes,yes,
+Caducidad,alertas,must,yes,yes,
+Historial de disparos,alertas,must,yes,yes,
+Deduplicar eventos,alertas,must,yes,yes,
+Evaluación con navegador cerrado,alertas,must,yes,yes,Worker en Node; exige mantener encendido el servidor local
+Notificaciones fuera de sesión,alertas,should,yes,partial,Historial persistente; notificación de navegador solo con página abierta; sin correo ni push externo
+Editar regla existente,alertas,should,yes,partial,Pausar o eliminar y crear regla nueva; sin formulario de edición
+Varios diseños guardados,persistencia,should,yes,partial,Un espacio activo; copias JSON permiten conservar y restaurar otros
+Guardar y restaurar trabajo,persistencia,must,yes,yes,
+Copia JSON de espacio y listas,persistencia,should,yes,yes,No incluye reglas ni eventos; estos viven en SQLite
+Conflictos simultáneos entre pestañas,persistencia,could,yes,no,Última escritura gana; usar una pestaña de edición
+Diseño adaptable y controles de teclado,interfaz,must,yes,yes,"Diálogos, formularios y creación/edición de dibujos mediante coordenadas accesibles; controles canvas complementados por formulario"
+Operaciones y brókers,excluido,could,yes,skip,Fuera del alcance elegido
+Pine Script y biblioteca social,excluido,could,yes,skip,Runtime y comunidad fuera de alcance
+Noticias y fundamentales,excluido,could,yes,skip,Contenido licenciado fuera de alcance
+Datos y recursos propietarios,excluido,could,yes,skip,No se reutilizan feeds privados ni recursos de marca
+Reproducción histórica y simulador,excluido,could,yes,skip,Fuera del alcance elegido

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "productionBuild": "passed",
+  "unitTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "browserTests": {
+    "startTime": "2026-10-20T08:26:02.868Z",
+    "duration": 34369.407,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "contrast": {
+    "pairs": 28,
+    "failures": 0
+  },
+  "axe": "zero violations on tested desktop/mobile/object panel states",
+  "dependencyAudit": {
+    "vulnerabilities": 0
+  },
+  "limits": [
+    "Eight Coinbase USD crypto products",
+    "Price sampling 15s and candle refresh 60s",
+    "Local server must remain on for alerts",
+    "No public deployment or multi-user authentication"
+  ]
+}

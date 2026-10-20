@@ -1,0 +1,1 @@
+{"version": 1, "symbol": "BTC-USD", "interval": 3600, "kind": "candles", "studies": [{"id": "ema", "kind": "EMA", "period": 20, "color": "#c6f36b", "visible": true}], "drawings": [], "lists": [{"id": "main", "name": "Mi mercado", "symbols": ["BTC-USD", "ETH-USD", "SOL-USD", "LINK-USD", "AVAX-USD"]}], "listId": "main", "layoutName": "Análisis principal"}
